@@ -7,5 +7,6 @@ using namespace std;
 int main()
 {
 	cout << "hello ebat";
+	cout << "черт ";
 }
 
