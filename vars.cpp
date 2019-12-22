@@ -14,4 +14,3 @@ int main()
 	cout << "Адрес динамической: " << dynamic << endl;
 	return 0;
 }
-

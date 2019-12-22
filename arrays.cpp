@@ -3,11 +3,8 @@
 using namespace std;
 
 void array_print1_st(size_t size, int arr[]);
-
 //void array_print2_st(size_t size, size_t size1, int arr[size][size1]); //Я не знаю,это не хочет работать...
-
 void array_print1_dy(size_t size, int* arr);
-
 void array_print2_dy(size_t size, size_t size1, int** arr);
 
 size_t arr_sz = 3;
@@ -15,13 +12,9 @@ size_t arr_sz = 3;
 int main()
 {
 	int arr_static_1dim[arr_sz];
-
 	int arr_static_2dim[arr_sz][arr_sz];
-
 	int* arr_dynamic_1dim = new int[arr_sz];
-
 	int** arr_dynamic_2dim = new int*[arr_sz];
-
 	for(int i = 0; i < arr_sz; i++)
 	{
 		arr_dynamic_2dim[i] = new int[arr_sz];
@@ -65,7 +58,6 @@ void array_print1_st(size_t size, int arr[])
 	{
 		cout << &arr[i] << endl;
 	}
-
 	cout << endl;
 }
 
@@ -75,7 +67,6 @@ void array_print1_dy(size_t size, int* arr)
 	{
 		cout << &arr[i] << endl;
 	}
-
 	cout << endl;
 }
 
@@ -88,7 +79,6 @@ void array_print2_dy(size_t size, size_t size1, int** arr)
 			cout << &arr[i][j] << endl;
 		}
 	}
-
 	cout << endl;
 }
 /*
@@ -101,7 +91,6 @@ void array_print2_st(size_t size, size_t size1, int arr[size][size1])
 			cout << &arr[i][j] << endl;
 		}
 	}
-
 	cout << endl;
 }
 */
