@@ -9,8 +9,8 @@ int main()
 	int local = 0;
 	int* dynamic = new int;
 
-	cout << "Адрес глобальной: " << &global << endl;
-	cout << "Адрес локальной: " << &local << endl;
-	cout << "Адрес динамической: " << dynamic << endl;
+	cout << "Global address: " << &global << endl;
+	cout << "Local address: " << &local << endl;
+	cout << "Dynamic address: " << dynamic << endl;
 	return 0;
 }
