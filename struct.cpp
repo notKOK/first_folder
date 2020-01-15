@@ -27,9 +27,9 @@ struct Line
 
 struct Line_align
 {
-	double calories;
-	short cost;
 	bool exist;
+	short cost;
+	double calories;
 };
 
 void print(Alignment smth);
