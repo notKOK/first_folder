@@ -3,7 +3,6 @@
 using namespace std;
 
 void array_print1_st(size_t size, int arr[]);
-//void array_print2_st(size_t size, size_t size1, int arr[size][size1]); //Я не знаю,это не хочет работать...
 void array_print1_dy(size_t size, int* arr);
 void array_print2_dy(size_t size, size_t size1, int** arr);
 
@@ -26,7 +25,7 @@ int main()
 	cout << "Dynamic 1 dim: " << endl;
 	array_print1_dy(arr_sz, arr_dynamic_1dim);
 
-	cout << "Static 2 dim: " << endl; //реализация здесь, потому что не работает функция
+	cout << "Static 2 dim: " << endl;
 	for(int i = 0; i < arr_sz; i++)
 		{
 			for(int j = 0; j < arr_sz; j++)
@@ -81,16 +80,3 @@ void array_print2_dy(size_t size, size_t size1, int** arr)
 	}
 	cout << endl;
 }
-/*
-void array_print2_st(size_t size, size_t size1, int arr[size][size1])
-{
-	for(int i = 0; i < size; i++)
-	{
-		for(int j = 0; j < size1; j++)
-		{
-			cout << &arr[i][j] << endl;
-		}
-	}
-	cout << endl;
-}
-*/
